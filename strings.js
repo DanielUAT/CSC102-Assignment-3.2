@@ -8,9 +8,9 @@ function strings() {
     var zipCode = document.getElementById("zipCode").value;
     // Combine first and last name
     var combinedName = firstName + " " + lastName;
-    console.log("Combined Name: " + combinedName + " "+ combinedName.length + " characters");
+ 
     var combinedInfo = combinedName + " "  + zipCode;
-    console.log("Combined Info: " + combinedInfo + " " + combinedInfo.length + " characters");
+  
 
     var secretCode = "";
     var i;
