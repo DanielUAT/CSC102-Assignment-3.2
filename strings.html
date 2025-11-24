@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="strings.css"> <!--Links to CSS file for styling-->
+    <script src="strings.js" ></script> <!--Links to JavaScript file for functionality-->
+    <title>Strings</title>
+</head>
+<body>
+    <h1>Strings</h1> <br><br><br>
+     <h2>Please enter your first name, last name, and zip code below to get your secret code</h2>
+     <h3>Your first and last name combined should be less than 20 characters and the zip code should be exactly 5 digits</h3>
+
+     <form id = "nameForm" onsubmit = "return false;"> <!--Creates form for name input -->
+        First Name: <input type="text" id="firstName" pattern="[A-Za-z]+" autofocus required title="Please do not use numbers or special characters"><br><br> <!--Creates input field for first name-->
+        Last Name: <input type="text" id="lastName" pattern="[A-Za-z]+" autofocus required title="Please do not use numbers or special characters"><br><br>   <!--Creates input field for last name-->
+        Zip Code: <input type="text" id="zipCode" pattern="[0-9]{5}" autofocus required title="Please make sure to enter exactly five numbers"><br><br>   <!--Creates input field for zip code-->
+        <input type="submit" id="submit" onclick="strings()"> <!--Creates submit button that calls strings function-->
+    </form>
+      
+    <p id="Secret Code" Enter everything correctly for your secret code></p> <!--Placeholder for output-->    
+       
+</body>
+</html>
